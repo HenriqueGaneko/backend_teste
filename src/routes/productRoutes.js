@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { getProducts, createProductController } from '../controllers/productController.js';
+import { createProductController, getProducts ,getProduct} from "../controllers/productController.js";
 
-const router = Router();
+const router = new Router();
 
 router.get("/products", getProducts);
 router.get("/products/:id", getProduct);
